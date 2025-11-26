@@ -95,7 +95,7 @@ const Index = () => {
               <DiagramBox 
                 label="CMS" 
                 onClick={() => handleBoxClick("CMS")}
-                className="bg-primary text-primary-foreground border-primary w-full"
+                className="bg-primary text-primary-foreground border-primary"
               />
             </DiagramContainer>
 
@@ -156,7 +156,7 @@ const Index = () => {
               <DiagramBox 
                 label="Sales Team Management" 
                 onClick={() => handleBoxClick("Sales Team Management")}
-                className="bg-primary text-primary-foreground border-primary w-full"
+                className="bg-primary text-primary-foreground border-primary"
               />
             </DiagramContainer>
           </div>
@@ -262,42 +262,42 @@ const Index = () => {
           <DiagramBox 
             label="Analytics & Reporting" 
             onClick={() => handleBoxClick("Analytics & Reporting")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
           <DiagramBox 
             label="ERP" 
             onClick={() => handleBoxClick("ERP")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
           <DiagramBox 
             label="OMS/WMS" 
             onClick={() => handleBoxClick("OMS/WMS")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
           <DiagramBox 
             label="PIM" 
             onClick={() => handleBoxClick("PIM")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
           <DiagramBox 
             label="CRM" 
             onClick={() => handleBoxClick("CRM")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
           <DiagramBox 
             label="Payments" 
             onClick={() => handleBoxClick("Payments")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
           <DiagramBox 
             label="EDI" 
             onClick={() => handleBoxClick("EDI")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
           <DiagramBox 
             label="Tax Providers" 
             onClick={() => handleBoxClick("Tax Providers")}
-            className="bg-muted text-muted-foreground border-muted w-full"
+            className="bg-muted text-muted-foreground border-muted"
           />
         </div>
       </div>
