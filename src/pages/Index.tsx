@@ -5,7 +5,7 @@ import { ContentModal } from "@/components/ContentModal";
 
 // Variáveis para conteúdo de texto - edite estas variáveis para adicionar conteúdo
 const CONTENT_MAP: Record<string, string> = {
-  "Multi-Step Checkout": "",
+  "Multi-Step Checkout": "VTEX Multi-step checkout guides the shopper through cart setting, delivery input information, and payment selection. It provides a smooth experience, better adapted for small buyers that expected a B2C-like experience.\nThis checkout natively consumes B2B capabilities such as Contracts and Organizational Units, ensuring that every step is aligned with the buyer's commercial terms and compliance requirements.",
   "Discovery Experience": "",
   "Intelligent Search": "",
   "Self-service sign-up": "",
