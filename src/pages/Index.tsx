@@ -19,14 +19,11 @@ For B2B merchants, it centralizes content governance and accelerates updates for
 For merchants, it expands compatibility with enterprise procurement workflows and makes it easier to win large accounts that require strict system integration. For buyers, it ensures compliance with internal purchasing processes while offering a richer, more accurate shopping experience than static catalogs.`,
   "AI Powered Quick-Order": `AI Powered Quick-Order accelerates repeat and bulk purchasing by allowing buyers to quickly add items using file uploads. Our product interpret ambiguous inputs, suggest the correct SKUs, and reduce errors in high-volume ordering scenarios.
 For B2B merchants, this capability increases order throughput and reduces customer service overhead associated with manual entry mistakes. For buyers, it drastically cuts the time required to build large carts, making procurement faster, more intuitive, and less error-prone.`,
-  "Buying Policies": `Buying Policies let buyer organizations define compliance rules for their purchasing process. Whether related to spending limits, budget enforcement, or specific procurement conditions, these policies can route purchases for approval before submission or block non-compliant orders at checkout.
-They provide strict control across large organizations with complex governance requirements, reducing rework and ensuring compliance for both buyers and merchants.`,
+  "Buying Policies & Approval Workflows": `Buying Policies & Approval Workflows give organizations full control over how purchases move through their internal governance. Buying Policies define compliance rules—such as spending limits, budget constraints, or category restrictions—that determine when an order must be reviewed. Approval Workflows then route these orders to the appropriate approvers, following the buyer's organizational structure and commercial rules.`,
   "Approval Workflows": `Approval Workflows allow organizations to enforce structured review steps before an order is submitted, based on the Buying Policies in place. Orders can be routed through approvers in different departments or cost centers, following a clear sequential flow.
 For merchants, this reduces order cancellations and disputes by aligning with customers' governance processes. For buyers, it ensures every purchase follows internal rules while keeping the full approval chain visible, traceable, and easy to manage.`,
   "Budgeting Control": `Budgeting Control provides tools for organizations to track and govern spend across PO numbers, cost centers, users, or shipping addresses. Combined with Buying Policies and Approval Workflows, it enables enforcement of budget limits throughout the entire organization.
 For merchants, it deepens long-term relationships with enterprise customers by supporting disciplined financial governance. For buyers, it prevents overspending, increases accountability, and keeps purchasing aligned with corporate budgets.`,
-  "Accounting Fields": `Accounting Fields allow organizations to define and collect financial identifiers directly during checkout—such as cost center, project code, purchase order ID, or internal account numbers. These inputs ensure orders are reconciled accurately and integrated with back-office systems. When paired with Budgeting Control, they can also determine spend limits based on specific financial pools.
-For merchants, this reduces post-order friction and minimizes manual reconciliation. For buyers, it embeds essential administrative data into each transaction, supporting compliance and streamlining financial workflows end-to-end.`,
   "AI Quoting Experience": `AI Quoting Experience enables both sales reps and buyers to generate accurate, personalized quotes in seconds. For buyers, Request for Quotes (RFQ) flows are embedded directly in the buyer portal and powered by AI agents that can read files, extract key information, and structure quotes securely and rapidly. For sales reps, AI agents interpret incoming requests, suggest optimized terms, and act as an analytical companion to support successful negotiations. Reps can also propose quotes through a full Configure, Price, Quote (CPQ) experience. Buyers and sales reps collaborate through conversational interactions within the platform.
 For merchants, it accelerates the quote-to-order cycle and ensures consistency across all reps. For buyers, it delivers fast, relevant proposals that reflect their needs, helping them move from negotiation to purchase with less back-and-forth.`,
   "Quote Approval Workflow": `Quote Approval Workflow enforces internal governance before quotes are shared with buyers. Quotes can be routed to managers or commercial teams based on discount thresholds, margin impact, contract terms, or any other business rule.
@@ -47,7 +44,7 @@ For merchants, it drastically reduces manual work and accelerates onboarding or 
 For merchants, it reduces delivery errors and improves fulfillment accuracy. For buyers, it centralizes operational logistics, ensuring every order is sent to the right place and recipient.`,
   "Shared Payment Methods": `Shared Payment Methods let organizations manage payment methods at the contract or unit level—whether negotiated payment terms or shared credit cards used by multiple users. Permissions ensure that only authorized individuals can access or use these methods during checkout.
 For merchants, it simplifies financial administration and ensures the correct terms are applied per buyer. For buyers, it supports secure, compliant purchasing by ensuring the right payment instruments are used by the right people.`,
-  "Roles & Permissions": `Roles & Permissions define what each user in the buyer organization can do on the storefront—buyer, approver, organizational unit manager, administrator, and more. Permissions govern activities such as placing orders, approving purchases, managing budgets, editing users, or accessing analytics.
+  "Buyer Roles & Permissions": `Roles & Permissions define what each user in the buyer organization can do on the storefront—buyer, approver, organizational unit manager, administrator, and more. Permissions govern activities such as placing orders, approving purchases, managing budgets, editing users, or accessing analytics.
 For merchants, it supports complex governance models and ensures each account operates according to the buyer's rules. For buyers, it creates a controlled environment where responsibilities are clearly assigned and purchasing workflows run smoothly.`,
   "Authentication & SSO": `Authentication & SSO provides secure access methods tailored for B2B, including username-based login, password recovery, and integration with external identity providers. VTEX also offers additional security layers such as MFA, allowing organizations to enforce stringent identity and security standards across all users.
 For merchants, it minimizes support issues and aligns with enterprise security expectations. For buyers, it provides a reliable, unified login experience that reduces friction and strengthens account security.`,
@@ -137,8 +134,8 @@ const Index = () => {
                 className="bg-primary text-primary-foreground border-primary"
               />
               <DiagramBox 
-                label="Buying Policies" 
-                onClick={() => handleBoxClick("Buying Policies")}
+                label="Buying Policies & Approval Workflows" 
+                onClick={() => handleBoxClick("Buying Policies & Approval Workflows")}
                 className="bg-primary text-primary-foreground border-primary"
               />
               <DiagramBox 
@@ -149,11 +146,6 @@ const Index = () => {
               <DiagramBox 
                 label="Budgeting Control" 
                 onClick={() => handleBoxClick("Budgeting Control")}
-                className="bg-primary text-primary-foreground border-primary"
-              />
-              <DiagramBox 
-                label="Accounting Fields" 
-                onClick={() => handleBoxClick("Accounting Fields")}
                 className="bg-primary text-primary-foreground border-primary"
               />
             </DiagramContainer>
@@ -188,7 +180,7 @@ const Index = () => {
           </div>
 
           {/* B2B Commerce */}
-          <DiagramContainer title="B2B Commerce" variant="navy">
+          <DiagramContainer title="B2B Management" variant="navy">
             <DiagramBox 
               label="Personalized Contracted Terms" 
               onClick={() => handleBoxClick("Personalized Contracted Terms")}
@@ -215,13 +207,8 @@ const Index = () => {
               className="bg-secondary text-secondary-foreground border-secondary"
             />
             <DiagramBox 
-              label="Roles & Permissions" 
-              onClick={() => handleBoxClick("Roles & Permissions")}
-              className="bg-secondary text-secondary-foreground border-secondary"
-            />
-            <DiagramBox 
-              label="Authentication & SSO" 
-              onClick={() => handleBoxClick("Authentication & SSO")}
+              label="Buyer Roles & Permissions" 
+              onClick={() => handleBoxClick("Buyer Roles & Permissions")}
               className="bg-secondary text-secondary-foreground border-secondary"
             />
           </DiagramContainer>
@@ -251,6 +238,11 @@ const Index = () => {
             <DiagramBox 
               label="Payment Gateway" 
               onClick={() => handleBoxClick("Payment Gateway")}
+              className="bg-secondary text-secondary-foreground border-secondary"
+            />
+            <DiagramBox 
+              label="Authentication & SSO" 
+              onClick={() => handleBoxClick("Authentication & SSO")}
               className="bg-secondary text-secondary-foreground border-secondary"
             />
           </DiagramContainer>
