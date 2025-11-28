@@ -20,8 +20,7 @@ For merchants, it expands compatibility with enterprise procurement workflows an
   "AI Powered Quick-Order": `AI Powered Quick-Order accelerates repeat and bulk purchasing by allowing buyers to quickly add items using file uploads. Our product interpret ambiguous inputs, suggest the correct SKUs, and reduce errors in high-volume ordering scenarios.
 For B2B merchants, this capability increases order throughput and reduces customer service overhead associated with manual entry mistakes. For buyers, it drastically cuts the time required to build large carts, making procurement faster, more intuitive, and less error-prone.`,
   "Buying Policies & Approval Workflows": `Buying Policies & Approval Workflows give organizations full control over how purchases move through their internal governance. Buying Policies define compliance rules—such as spending limits, budget constraints, or category restrictions—that determine when an order must be reviewed. Approval Workflows then route these orders to the appropriate approvers, following the buyer's organizational structure and commercial rules.`,
-  "Approval Workflows": `Approval Workflows allow organizations to enforce structured review steps before an order is submitted, based on the Buying Policies in place. Orders can be routed through approvers in different departments or cost centers, following a clear sequential flow.
-For merchants, this reduces order cancellations and disputes by aligning with customers' governance processes. For buyers, it ensures every purchase follows internal rules while keeping the full approval chain visible, traceable, and easy to manage.`,
+  "Accounting Fields": `Accounting Fields allow organizations to define and collect financial identifiers directly during checkout—such as cost center, project code, purchase order ID, or internal account numbers. These inputs ensure orders are reconciled accurately and integrated with back-office systems. When paired with Budgeting Control, they can also determine spend limits based on specific financial pools.`,
   "Budgeting Control": `Budgeting Control provides tools for organizations to track and govern spend across PO numbers, cost centers, users, or shipping addresses. Combined with Buying Policies and Approval Workflows, it enables enforcement of budget limits throughout the entire organization.
 For merchants, it deepens long-term relationships with enterprise customers by supporting disciplined financial governance. For buyers, it prevents overspending, increases accountability, and keeps purchasing aligned with corporate budgets.`,
   "AI Quoting Experience": `AI Quoting Experience enables both sales reps and buyers to generate accurate, personalized quotes in seconds. For buyers, Request for Quotes (RFQ) flows are embedded directly in the buyer portal and powered by AI agents that can read files, extract key information, and structure quotes securely and rapidly. For sales reps, AI agents interpret incoming requests, suggest optimized terms, and act as an analytical companion to support successful negotiations. Reps can also propose quotes through a full Configure, Price, Quote (CPQ) experience. Buyers and sales reps collaborate through conversational interactions within the platform.
@@ -139,8 +138,8 @@ const Index = () => {
                 className="bg-primary text-primary-foreground border-primary"
               />
               <DiagramBox 
-                label="Approval Workflows" 
-                onClick={() => handleBoxClick("Approval Workflows")}
+                label="Accounting Fields" 
+                onClick={() => handleBoxClick("Accounting Fields")}
                 className="bg-primary text-primary-foreground border-primary"
               />
               <DiagramBox 
